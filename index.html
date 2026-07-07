@@ -7,6 +7,7 @@
     <title>REVISÃO DEV | Tecnologia e Inovação</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body class="bg-[#050505] text-white">
@@ -14,7 +15,7 @@
     <!-- Navbar -->
     <nav
         class="fixed w-full z-50 px-8 py-6 flex justify-between items-center bg-[#050505]/80 backdrop-blur-lg border-b border-white/5">
-        <img src="assets/imgs/1_Logo.png" alt="Logo" class="h-12">
+        <img src="assets/imgs/1_Logo.png" alt="Logo" class="h-[75px] w-auto">
         <div class="hidden md:flex gap-8 text-xs font-bold tracking-widest uppercase text-slate-400">
             <a href="#proposta" class="hover:text-cyan-400 transition">Proposta</a>
             <a href="#metodologia" class="hover:text-cyan-400 transition">Metodologia</a>
@@ -26,12 +27,102 @@
     </nav>
 
     <!-- Hero -->
-    <header class="h-screen flex flex-col justify-center items-start px-8 md:px-20">
+    <!-- <header class="h-screen flex flex-col justify-center items-start px-8 md:px-20">
         <h1 class="text-7xl md:text-9xl font-black mb-6 leading-[0.9]">EDUCAÇÃO <br><span
                 class="text-cyan-500">TECNOLÓGICA</span></h1>
         <p class="text-xl text-slate-400 max-w-lg mb-10">Miquéias Sousa lidera o Revisão Dev, aproximando teoria e
             prática para preparar as novas gerações para o futuro.</p>
+    </header> -->
+
+    <header class="relative min-h-screen flex flex-col justify-center px-8 md:px-20 overflow-hidden">
+
+        <div class="absolute right-0 top-0 w-full md:w-1/2 h-full z-0 opacity-30 md:opacity-70 overflow-hidden">
+            <img src="assets/imgs/posts/29.png" alt="Miquéias Sousa" class="w-full h-full object-cover object-[center_-150px] scale-150">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-[#050505] to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-2xl mt-32 md:mt-0">
+            <h1 class="text-5xl md:text-9xl font-black mb-6 leading-[0.9]">EDUCAÇÃO <br>
+                <span class="text-cyan-500">TECNOLÓGICA</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-lg mb-10">
+                Miquéias Sousa lidera o Revisão Dev, aproximando teoria e prática para preparar as novas gerações para o
+                futuro.
+            </p>
+        </div>
     </header>
+
+
+    <!-- Seção: Experiência Imersiva -->
+    <section class="relative py-32 overflow-hidden border-t border-white/5">
+        <!-- Imagem de fundo com opacidade -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2000"
+                alt="Programação" class="w-full h-full object-cover opacity-20">
+            <!-- Efeito futurista de gradiente -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+        </div>
+
+        <!-- Conteúdo -->
+        <div class="relative z-10 max-w-7xl mx-auto px-8 md:px-20">
+            <div class="max-w-xl">
+                <h2 class="text-5xl font-black mb-8 leading-tight">O FUTURO É <span
+                        class="text-cyan-500">CODIFICADO</span></h2>
+                <p class="text-lg text-slate-300 mb-8">
+                    Cada linha de código é uma oportunidade de transformar a curiosidade em inovação real.
+                    No Revisão Dev, a tecnologia não é apenas um tema de estudo, é uma ferramenta de criação.
+                </p>
+                <a href="#contato"
+                    class="inline-block border border-cyan-500 text-cyan-500 px-8 py-3 rounded-full font-bold hover:bg-cyan-500 hover:text-black transition">
+                    INICIAR JORNADA
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Seção: Programação -->
+    <section id="programacao" class="py-24 px-8 md:px-20 bg-black border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-black mb-16 text-cyan-500 uppercase tracking-tighter">O Universo da Programação
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <!-- Texto de destaque -->
+                <div class="space-y-6">
+                    <p class="text-xl text-slate-300 leading-relaxed">
+                        A programação é a linguagem que move o futuro. No REVISÃO DEV, ensinamos desde a lógica
+                        fundamental até o desenvolvimento de sistemas complexos.
+                    </p>
+                    <p class="text-slate-500">
+                        Trabalhamos com o conceito de "revisão" — o ato de reforçar, praticar e entender profundamente
+                        cada conceito para que o aluno evolua com autonomia.
+                    </p>
+                </div>
+
+                <!-- Grid de Habilidades/Conceitos -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white/5 p-6 rounded-2xl border border-white/5 hover:border-cyan-500/50 transition">
+                        <h4 class="font-bold text-lg mb-2">Algoritmos</h4>
+                        <p class="text-xs text-slate-400">Raciocínio lógico estruturado.</p>
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-2xl border border-white/5 hover:border-cyan-500/50 transition">
+                        <h4 class="font-bold text-lg mb-2">Desenvolvimento</h4>
+                        <p class="text-xs text-slate-400">Criação de sistemas e apps.</p>
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-2xl border border-white/5 hover:border-cyan-500/50 transition">
+                        <h4 class="font-bold text-lg mb-2">Engenharia</h4>
+                        <p class="text-xs text-slate-400">Estrutura de dados e análise.</p>
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-2xl border border-white/5 hover:border-cyan-500/50 transition">
+                        <h4 class="font-bold text-lg mb-2">Linguagens</h4>
+                        <p class="text-xs text-slate-400">Prática constante e atualizada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Bloco: Diferenciais -->
     <section id="metodologia" class="py-24 px-8 md:px-20 grid md:grid-cols-3 gap-12 border-t border-white/5">
@@ -116,6 +207,7 @@
 
         </div>
     </section>
+
 
 
     <!-- Footer Robusto -->

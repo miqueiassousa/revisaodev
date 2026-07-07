@@ -27,3 +27,12 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
+
+// Força o scroll para o topo ao carregar a página
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
+window.onload = () => {
+    window.scrollTo(0, 0);
+};
