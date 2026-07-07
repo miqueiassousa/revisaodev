@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REVISÃO DEV | Programação, Robótica e Tecnologia</title>
+
+  <meta name="description" content="Projeto de tecnologia, programação e robótica para crianças e jovens.">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-slate-950 text-white">
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/70">
+
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+
+      <a href="#">
+        <img src="img/logo.png" class="h-14" alt="Revisão DEV">
+      </a>
+
+      <nav class="hidden md:flex gap-8 text-sm uppercase">
+
+        <a href="#inicio" class="hover:text-cyan-400 transition">Início</a>
+
+        <a href="#sobre" class="hover:text-cyan-400 transition">Sobre</a>
+
+        <a href="#projetos" class="hover:text-cyan-400 transition">Projetos</a>
+
+        <a href="#galeria" class="hover:text-cyan-400 transition">Galeria</a>
+
+        <a href="#contato" class="hover:text-cyan-400 transition">Contato</a>
+
+      </nav>
+
+      <button id="menu-btn" class="md:hidden text-3xl">
+
+        <i class="fa-solid fa-bars"></i>
+
+      </button>
+
+    </div>
+
+  </header>
+
+  <!-- MENU MOBILE -->
+
+  <div id="mobileMenu" class="hidden fixed top-20 left-0 bg-slate-900 w-full p-6 z-40">
+
+    <div class="flex flex-col gap-5 text-center">
+
+      <a href="#inicio">Início</a>
+
+      <a href="#sobre">Sobre</a>
+
+      <a href="#projetos">Projetos</a>
+
+      <a href="#galeria">Galeria</a>
+
+      <a href="#contato">Contato</a>
+
+    </div>
+
+  </div>
+
+  <!-- ================= HERO ================= -->
+
+  <section id="inicio" class="min-h-screen flex items-center bg-gradient-to-r from-slate-950 to-slate-900">
+
+    <div class="container mx-auto px-6">
+
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+
+        <div>
+
+          <span class="bg-cyan-600 px-4 py-2 rounded-full uppercase text-xs">
+
+            Tecnologia • Programação • Robótica
+
+          </span>
+
+          <h1 class="text-5xl md:text-7xl font-black mt-8 leading-tight">
+
+            Educação Tecnológica
+
+            <span class="text-cyan-400">
+
+              que transforma ideias
+
+            </span>
+
+            em projetos.
+
+          </h1>
+
+          <p class="text-slate-300 mt-8 text-lg leading-8">
+
+            O Revisão DEV leva programação,
+            robótica educacional e cultura maker para escolas,
+            crianças e jovens através de aulas práticas,
+            oficinas e projetos tecnológicos.
+
+          </p>
+
+          <div class="flex flex-wrap gap-4 mt-10">
+
+            <a href="#projetos" class="bg-cyan-500 hover:bg-cyan-600 px-8 py-4 rounded-lg font-semibold transition">
+
+              Conheça os Projetos
+
+            </a>
+
+            <a href="https://wa.me/5577998672765" target="_blank"
+              class="border border-cyan-500 px-8 py-4 rounded-lg hover:bg-cyan-500 transition">
+
+              Falar no WhatsApp
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="flex justify-center">
+
+          <img src="img/logo.png" class="w-96 floating">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= SOBRE ================= -->
+
+  <section id="sobre" class="py-24 bg-slate-900">
+
+    <div class="container mx-auto px-6">
+
+      <div class="text-center">
+
+        <h2 class="text-5xl font-bold">
+
+          Quem Somos
+
+        </h2>
+
+        <p class="mt-6 text-slate-300 max-w-4xl mx-auto leading-8">
+
+          O Revisão DEV é um projeto dedicado ao ensino de
+          programação, robótica e tecnologia.
+
+          O nome representa o ato de revisar conhecimentos,
+          reforçar conceitos e transformar teoria em prática.
+
+          Além da produção de conteúdo,
+          o projeto oferece aulas presenciais,
+          oficinas, cultura maker,
+          robótica educacional e experiências
+          tecnológicas para escolas e instituições.
+
+          Nosso objetivo é despertar o interesse pela tecnologia,
+          desenvolver criatividade,
+          pensamento computacional,
+          raciocínio lógico
+          e preparar os alunos para os desafios do futuro.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= PROPOSTA ================= -->
+
+  <section class="py-24">
+
+    <div class="container mx-auto px-6">
+
+      <h2 class="text-center text-5xl font-bold">
+
+        Nossa Proposta
+
+      </h2>
+
+      <div class="grid md:grid-cols-4 gap-8 mt-16">
+
+        <div class="card">
+
+          <i class="fa-solid fa-laptop-code text-5xl text-cyan-400"></i>
+
+          <h3>Programação</h3>
+
+          <p>
+
+            Desenvolvimento de lógica,
+            algoritmos e criação de sistemas.
+
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <i class="fa-solid fa-robot text-5xl text-cyan-400"></i>
+
+          <h3>Robótica</h3>
+
+          <p>
+
+            Montagem de robôs,
+            eletrônica e Arduino.
+
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <i class="fa-solid fa-microchip text-5xl text-cyan-400"></i>
+
+          <h3>Cultura Maker</h3>
+
+          <p>
+
+            Aprender construindo projetos reais.
+
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <i class="fa-solid fa-school text-5xl text-cyan-400"></i>
+
+          <h3>Escolas</h3>
+
+          <p>
+
+            Parcerias para aulas e oficinas.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
